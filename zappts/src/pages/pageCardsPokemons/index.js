@@ -15,7 +15,6 @@ function Pokemons() {
     const [pokemonBackUp, setPokemonBackUp] = useState([]);
 
     const handlePagination = (value) => {
-
         if (value === 'prev') {
             if (!page) return
             setPage(page - 18)
@@ -24,9 +23,10 @@ function Pokemons() {
             setPage(page + 18)
         }
         setPokemomsUrl([])
-        getPokemoms()
-
     }
+    useEffect(() => {
+        getPokemoms()
+    }, [page])
     const handleType = (types) => {
         const pokemons = pokemonBackUp.filter((pokemon) => {
             return pokemon.types.some((typePokemon) => {
