@@ -1,0 +1,50 @@
+.boxType {
+    position: fixed;
+    margin-top: 180px;
+    margin-right: 590px;
+    z-index: 999;
+    width: 80px;
+    height: 90px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+}
+
+.textFilter {
+    display: flex;
+    justify-content: center;
+    margin-right: 590px;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+    width: 80px;
+    border-radius: 6px;
+    background-color: white;
+    font-size: large;
+}
+
+.inputCheck {
+    margin-left: 7px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+#labelName {
+    margin-left: 5px;
+}
+
+#inputBox {
+    cursor: pointer;
+}
+
+@media only screen and (width:414px) {
+    .boxType {
+        position: absolute;
+        margin-top: 185px;
+        margin-right: 220px;
+    }
+
+    .textFilter {
+        margin-right: 220px;
+    }
+}

@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+  --font-inter: 'Inter', sans-serif;
+  --font-open-sans: 'Open Sans', sans-serif;
+  --gray-opacity: #cfc6c665;
+  --gray-black-opacity: #212121CC;
+  --shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.151);
+  --black: #000;
+  --back-soft: #171414;
+  --gray-blue: #303943;
+  --black-modal: rgba(0, 0, 0, 0.74);
+
+  --white: rgb(177, 140, 212);
+  --white-bg: rgb(197, 197, 197);
+  --black-bg: rgb(0, 0, 0, 0.6);
+  --green: rgba(70, 164, 135, 1);
+  --green-opacity: rgba(72, 208, 176, 0.7);
+  --red: rgb(251, 108, 108);
+  --brown: rgb(100, 79, 71);
+  --blue: rgba(70, 118, 164, 0.8);
+  --pink: rgba(242, 205, 214, 1);
+  --gray: rgb(66, 66, 66);
+  --purple: rgb(70, 197, 215);
+  --yellow: rgb(255, 206, 75);
+
+}
+
+body {
+  position: relative;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

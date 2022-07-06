@@ -1,0 +1,212 @@
+.containerModalExternal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(202, 208, 214, 0.5);
+
+
+}
+
+.modalInternal {
+    display: flex;
+    z-index: 99999;
+    width: 700px;
+    height: 300px;
+}
+
+.btnCloseModal {
+    position: fixed;
+    width: 30px;
+    margin-bottom: 340px;
+    margin-left: 580px;
+    cursor: pointer;
+}
+
+.btnCloseModal:hover {
+    transform: scale(1.1);
+}
+
+.imgBoxModal {
+    display: flex;
+    justify-content: center;
+    width: 260px;
+    border-radius: 10px;
+}
+
+.imgPokemonModal {
+    margin-top: 20px;
+    margin-bottom: -10px;
+    width: 200px;
+    height: 190px;
+}
+
+.containerImgType {
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    width: 200px;
+}
+
+.nameInfoId {
+    display: flex;
+    width: 130px;
+    height: 22px;
+    margin-top: 60px;
+    margin-left: 90px;
+    color: white;
+    gap: 20px;
+
+}
+
+.typeName {
+    display: flex;
+    background-color: rgb(241, 236, 236, 0.5);
+    width: 100px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerDescriptionExternal {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+    gap: 25px;
+    width: 50%;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.infoData {
+    display: flex;
+    width: 320px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.stats {
+    display: flex;
+}
+
+.containerFeature {
+    display: flex;
+    margin-right: 80px;
+    margin-top: 10px;
+    flex-direction: column;
+}
+
+.statsValueContainer {
+    display: flex;
+    position: fixed;
+    margin-left: 110px;
+    gap: 15px;
+
+}
+
+.descriptionCard {
+    display: flex;
+    width: 200px;
+}
+
+.pokemonNameDescription {
+    Font-family: Karla;
+    Font-style: Bold;
+    Font-size: 36px;
+    Line-height: 42px;
+    Line-height: 100%;
+    color: rgba(68, 68, 68, 1);
+    margin-top: 15px;
+}
+
+.pokeIdModalDescription {
+    position: fixed;
+    margin-left: 275px;
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.imgWeight {
+    margin-right: 10px;
+}
+
+.imgHeight {
+    margin-right: 10px;
+}
+
+.dataWeight {
+    Font-family: Inter;
+    Font-size: 17px;
+    font-weight: 600;
+    Line-height: 16px;
+    Line-height: 94%;
+    color: #212121;
+
+}
+
+.dataHeight {
+    Font-family: Inter;
+    Font-size: 17px;
+    font-weight: 600;
+    Line-height: 16px;
+    Line-height: 94%;
+    color: #212121;
+}
+
+.descriptionWeight {
+    margin-left: 20px;
+    font-size: 13px;
+}
+
+.descriptionHeight {
+    margin-left: 20px;
+    font-size: 13px;
+}
+
+.descriptionPower {
+    font-size: 13px;
+    margin-left: 3px;
+}
+
+@media only screen and (max-width:414px) {
+    .modalInternal {
+
+        position: fixed;
+        margin-bottom: 100px;
+        margin-left: 50px;
+        flex-direction: column;
+
+    }
+
+    .imgBoxModal {
+        width: 300px;
+    }
+
+    .containerDescriptionExternal {
+        width: 300px;
+    }
+
+    .containerModalExternal {
+        display: flex;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .btnCloseModal {
+        margin-bottom: 380px;
+        margin-right: 10px;
+        margin-left: 190px;
+        z-index: 99999;
+    }
+}

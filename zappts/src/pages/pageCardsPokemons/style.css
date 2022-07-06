@@ -1,0 +1,197 @@
+.allContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+footer {
+    display: none;
+}
+
+.headerHome img {
+    width: 100px;
+
+}
+
+.headerHome {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    justify-content: space-around;
+    outline: 1px solid black;
+    box-shadow: 3px 2px 10px black;
+}
+
+#btnHeader span {
+    font-weight: Bold;
+    Font-size: 25px;
+    Line-height: 34px;
+    Line-height: 100%;
+    margin: 45px;
+    cursor: pointer;
+}
+
+#spanPoke {
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+
+#spanContact {}
+
+.tipoPokes {
+    width: 70px;
+}
+
+.foundPokesInternal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.foundPokesInternal input {
+    all: unset;
+    width: 700px;
+    position: static;
+    border: 1px solid black;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+
+.selects {
+    display: flex;
+    gap: 50px;
+    margin-left: 210px;
+    margin-top: 15px;
+}
+
+.selects select {
+    border-radius: 5px;
+}
+
+.foundPokesInternal img {
+    position: fixed;
+    cursor: pointer;
+    margin-left: -30px;
+    margin-top: 4px;
+}
+
+.inputPokes {
+    margin-top: 10px;
+}
+
+.inputPokes img {
+    position: absolute;
+}
+
+.pokeContainerInternal {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 850px;
+    height: 300px;
+
+}
+
+.cardPoke {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+}
+
+.pokeContainerExternal {
+    display: flex;
+    align-items: center;
+}
+
+#home {}
+
+.pokeContainerExternal button {
+    width: 50px;
+    height: 50px;
+}
+
+.imgLoading {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    animation: spin 5000ms linear infinite;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    margin-top: -55px;
+    margin-left: -55px;
+}
+
+.arrow {
+    all: unset;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width:414px) {
+    .allContainer {
+        width: 100%;
+    }
+
+    .inputPokes {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        width: 200px;
+    }
+
+    .inputPokes img {
+        position: relative;
+    }
+
+
+    .headerHome {
+        display: none;
+    }
+
+    .pokeContainerInternal {
+        width: 350px;
+        margin-left: 60px;
+
+
+    }
+
+    .allContainer {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    footer {
+        display: flex;
+        position: absolute;
+        top: 1290px;
+    }
+
+    footer img {
+        cursor: pointer;
+    }
+
+    footer img:hover {
+        transform: scale(1.1);
+    }
+}
